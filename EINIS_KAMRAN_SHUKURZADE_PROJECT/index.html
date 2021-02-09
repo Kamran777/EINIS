@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<title>Conway's Game of Life</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script> <!-- in order to create a canvas -->
+</head>
+<body>
+	<div id="title">
+		<h1>Conway's Game of Life</h1>
+		<div class="center">
+			<p>Conways's Game of Life is made up of square cells arranged in a grid. Each cell is either alive or dead.</p>
+			<p>Devised by the British mathematician John Horton Conway in 1970.</p>
+			<p>The "game" is actually a zero-player game, meaning that its evolution is determined by its initial state, needing no input from human players. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
+			</p>
+		</div>
+		<p>Every turn, cells live, die or are "born" based on these rules:</p>
+   			<ol>
+				<li>If a cell is ON and has fewer than two neighbors that are ON, it turns OFF.</li>
+				<li>If a cell is ON and has either two or three neighbors that are ON, it remains ON.</li>
+				<li>If a cell is ON and has more than three neighbors that are ON, it turns OFF</li>
+				<li>If a cell is OFF and has exactly three neighbors that are ON, it turns ON.</li>
+			</ol>
+	</div>
+	<div class="bg-images">
+		<img class="img-fluid black" src="images/black.png" alt="">
+		<img class="img-fluid square" src="images/square.png" alt="">
+		<img class="img-fluid triangle" src="images/triangle.png" alt="">
+		<img class="img-fluid wave" src="images/wave.png" alt="">
+	</div>
+	<canvas></canvas>
+	<div class="name">
+		<h2>KAMRAN SHUKURZADE - 309139</h2>
+	</div>
+	<script src="./js/script.js"></script>
+
+</body>
+</html>
